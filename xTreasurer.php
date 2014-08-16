@@ -2,7 +2,7 @@
 /**
  * @name Treasurer
  * @desc Control how $$ is collected
- * @version v1.0.0
+ * @version v1.0.1
  * @author heylisten@xtiv.net
  * @icon cash_register.png
  * @mini credit-card
