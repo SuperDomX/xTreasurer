@@ -28,6 +28,8 @@
 
 		public function stripe($swipe)
 		{
+			$q = $this->q();
+
 			# code...
 			$this->lib('stripe/Stripe.php');
 			// Set your secret key: remember to change this to your live secret key in production
