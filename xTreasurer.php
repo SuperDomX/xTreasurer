@@ -2,7 +2,7 @@
 /**
  * @name Treasurer
  * @desc Control how $$ is collected
- * @version v1.1.0-RC
+ * @version v1.1.1
  * @author heylisten@xtiv.net
  * @icon cash_register.png
  * @mini credit-card
@@ -51,10 +51,10 @@
 			// See your keys here https://dashboard.stripe.com/account
 
 			$CFG = $this->readConfigs();
-
-			$key = $CFG['stripe_key'];
+ 
+			$key = "stripe_$CFG[stripe_live_test]_secret";
 			
-			Stripe::setApiKey($key);
+			Stripe::setApiKey($CFG[$key]);
 
 			// Get the credit card details submitted by the form
 			$token   = $swipe['id'];
