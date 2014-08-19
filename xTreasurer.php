@@ -2,14 +2,13 @@
 /**
  * @name Treasurer
  * @desc Control how $$ is collected
- * @version v1.1.1
+ * @version v1.1.2
  * @author heylisten@xtiv.net
  * @icon cash_register.png
  * @mini credit-card
  * @see market
  * @link treasurer
- * @todo
- * @alpha true
+ * @omega true
  */
 	class xTreasurer extends Xengine{
 		// Adds a stripe id to the users profile table. 
@@ -21,10 +20,18 @@
 			);
 		}
 
+
+		/**
+			@name settings
+			@blox Treasurer Settings
+			@desc Manage the Keys to the Vaults
+			@backdoor true
+			@icon key
+			@col 8
+		**/
 		protected function settings()
 		{ 
-			$r['input'] = array('','','');
- 			return $r;
+			
 		}
 
 		/**
