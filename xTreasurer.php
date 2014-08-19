@@ -2,7 +2,7 @@
 /**
  * @name Treasurer
  * @desc Control how $$ is collected
- * @version v1.0.1
+ * @version v1.1.0-RC
  * @author heylisten@xtiv.net
  * @icon cash_register.png
  * @mini credit-card
@@ -12,6 +12,21 @@
  * @alpha true
  */
 	class xTreasurer extends Xengine{
+		// Adds a stripe id to the users profile table. 
+		function dbSync(){
+			return array(
+				'Users' => array( 
+  					'stripe_id'		=> array('Type' => 'varchar(255)')
+				)
+			);
+		}
+
+		protected function settings()
+		{ 
+			$r['input'] = array('','','');
+ 			return $r;
+		}
+
 		/**
 		 * @remotable
 		 */
@@ -121,6 +136,11 @@
 				'data'	=> $f,
 				'errors' => $errors
 			);
+		}
+
+		function index()
+		{
+			// What does index Do?
 		}
 
 		function paypal(){
