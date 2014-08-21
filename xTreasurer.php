@@ -48,8 +48,10 @@
 			);
 		}
 
-		public function stripe($swipe)
+		public function stripe($swipe=null)
 		{
+			$swipe = ($swipe) ? $swipe : $_POST;
+
 			$q = $this->q();
 
 			# code...
