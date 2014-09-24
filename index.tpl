@@ -1,1 +1,1 @@
-{include file="~widgets/billboard.tpl"}
+{include file="~widgets/billboard.tpl" col=12}

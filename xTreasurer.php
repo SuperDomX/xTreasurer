@@ -2,7 +2,7 @@
 /**
  * @name Treasurer
  * @desc Control how $$ is collected
- * @version v1(1.2)
+ * @version v1(1.3)
  * @author heylisten@xtiv.net
  * @icon cash_register.png
  * @mini credit-card
@@ -21,18 +21,7 @@
 		}
 
 
-		/**
-			@name settings
-			@blox Treasurer Settings
-			@desc Manage the Keys to the Vaults
-			@backdoor true
-			@icon key
-			@col 8
-		**/
-		protected function settings()
-		{ 
-			
-		}
+		
 
 		/**
 		 * @remotable
@@ -46,6 +35,19 @@
 					'PAYPAL_EMAIL' => $CFG['PAYPAL_EMAIL']
 				)
 			);
+		}
+
+		/**
+			@name settings
+			@blox P.O.S. Settings
+			@desc Manage the Keys to the Vaults
+			@backdoor true
+			@icon key
+			@col 12
+		**/
+		protected function settings()
+		{ 
+			
 		}
 
 		public function stripe($swipe=null)
