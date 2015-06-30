@@ -1,11 +1,11 @@
 <?php
 /**
- * @name Treasurer
+ * @name Treasury
  * @desc Control how $$ is collected
  * @version v1(1.3)
  * @author heylisten@xtiv.net
  * @icon cash_register.png
- * @mini credit-card
+ * @mini money
  * @see market
  * @link treasurer
  * @omega true
