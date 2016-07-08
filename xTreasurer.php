@@ -1,14 +1,14 @@
 <?php
 /**
- * @name Treasury
- * @desc Control how $$ is collected
+ * @name    Treasury
+ * @desc    Control how $$ is collected
  * @version v1(1.3)
- * @author heylisten@xtiv.net
- * @icon cash_register.png
- * @mini money
- * @see market
- * @link treasurer
- * @omega true
+ * @author  heylisten@xtiv.net
+ * @icon    cash_register.png
+ * @mini    bank 
+ * @see     market
+ * @link    treasurer
+ * @omega   true
  */
 	class xTreasurer extends Xengine{
 		// Adds a stripe id to the users profile table. 
