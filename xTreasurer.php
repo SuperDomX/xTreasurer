@@ -2,8 +2,8 @@
 /**
  * @name    Treasury
  * @desc    Control how $$ is collected
- * @version v1(1.3)
- * @author  heylisten@xtiv.net
+    * @version v0.1(160710)
+    * @author  @xopherdeep
  * @icon    cash_register.png
  * @mini    bank 
  * @see     market
